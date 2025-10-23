@@ -1,13 +1,16 @@
-// import logo from './logo.svg';
 import './App.css';
-// import About from './components/About';
+import { Routes, Route, Link } from 'react-router-dom';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import Alert from './components/Alert';
 import { useState } from 'react';
+
 // import { useEffect } from 'react';
 
 let name = "Maheboob Pasha";
+
+
 
 function App() {
 
@@ -49,9 +52,16 @@ function App() {
             Welcome to React JS From {name}
           </h1>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, rerum! Totam cupiditate ex optio quidem cumque accusamus, exercitationem repellendus magnam reprehenderit est consequatur. Maiores minima animi repudiandae voluptate, reprehenderit earum.
-          <Textform label="Enter the Text" mode={StyleMode} showAlert={showAlert} />
+    {/* <Router> */}
+          <Routes>
+          <Route path="/about" element = {<About mode = {StyleMode}></About>}/>
+          
+          <Route path="/" element = {<Textform label="Enter the Text" mode={StyleMode} showAlert={showAlert} />}/>
+        </Routes>
+    {/* </Router> */}
         </div>
         {/* <About mode = {StyleMode}></About> */}
+        
         <footer>
           &copy; 2024 All Rights Reserved
         </footer>
