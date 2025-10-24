@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Mp-Prince/TextUtiles/static/css/main.4530e449.css",
+    "main.js": "/Mp-Prince/TextUtiles/static/js/main.f78dcb23.js",
+    "static/js/453.aaadf6ab.chunk.js": "/Mp-Prince/TextUtiles/static/js/453.aaadf6ab.chunk.js",
+    "index.html": "/Mp-Prince/TextUtiles/index.html",
+    "main.4530e449.css.map": "/Mp-Prince/TextUtiles/static/css/main.4530e449.css.map",
+    "main.f78dcb23.js.map": "/Mp-Prince/TextUtiles/static/js/main.f78dcb23.js.map",
+    "453.aaadf6ab.chunk.js.map": "/Mp-Prince/TextUtiles/static/js/453.aaadf6ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4530e449.css",
+    "static/js/main.f78dcb23.js"
+  ]
+}
