@@ -10,7 +10,7 @@ nav{
 } */
 
 .body{
-  /* height: 100vh; */
+  height: 100vh;
   margin: 20px;
   padding: 20px;
   border: 2px solid black;

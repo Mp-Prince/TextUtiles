@@ -1,5 +1,7 @@
 import './App.css';
-import { Routes, Route, Link } from 'react-router-dom';
+// import { Routes, Route} from 'react-router-dom';
+// import { BrowserRouter } from 'react-router-dom';
+
 import About from './components/About';
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
@@ -42,6 +44,7 @@ function App() {
 
   return (
     <>
+    {/* <BrowserRouter> */}
       <div className={`app ${StyleMode}`} >
         {/* <Navbar title = "Maheboob Pasha" about = "Contact us" /> */}
         <Navbar mode={StyleMode} btnText={btnText} about={"About Us"} toggleMode={toggleMode} />
@@ -53,11 +56,12 @@ function App() {
           </h1>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, rerum! Totam cupiditate ex optio quidem cumque accusamus, exercitationem repellendus magnam reprehenderit est consequatur. Maiores minima animi repudiandae voluptate, reprehenderit earum.
     {/* <Router> */}
-          <Routes>
-          <Route path="/about" element = {<About mode = {StyleMode}></About>}/>
+          {/* <Routes> */}
+          {/* <Route path="/about" element = {<About mode = {StyleMode}></About>}/> */}
           
-          <Route path="/" element = {<Textform label="Enter the Text" mode={StyleMode} showAlert={showAlert} />}/>
-        </Routes>
+          {/* <Route path="/" element = {<Textform label="Enter the Text" mode={StyleMode} showAlert={showAlert} />}/> */}
+          {<Textform label="Enter the Text" mode={StyleMode} showAlert={showAlert} />}
+        {/* </Routes> */}
     {/* </Router> */}
         </div>
         {/* <About mode = {StyleMode}></About> */}
@@ -66,6 +70,7 @@ function App() {
           &copy; 2024 All Rights Reserved
         </footer>
       </div>
+    {/* </BrowserRouter> */}
     </>
   );
 }
